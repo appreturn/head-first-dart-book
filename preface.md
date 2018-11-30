@@ -6,11 +6,12 @@
 
 - 作者：柴树杉，Github [@chai2010](https://github.com/chai2010)，Twitter [@chaishushan](https://twitter.com/chaishushan)
 
-## 在线阅读
-
-- [SUMMARY.md](SUMMARY.md)
-
-
 ## 版权声明
 
 自有版权，转载请联系作者。
+
+----
+
+# 前言
+
+TODO
