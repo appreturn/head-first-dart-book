@@ -9,7 +9,8 @@
 ## 在线阅读
 
 - [SUMMARY.md](SUMMARY.md)
-
+- https://chai2010.cn/head-first-dart-book/
+- QQ群(Dart编程语言)：701773238
 
 ## 版权声明
 

@@ -43,3 +43,4 @@ go.sum
 # dart
 .packages
 pubspec.lock
+.dart_tool
