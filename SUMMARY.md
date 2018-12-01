@@ -2,7 +2,7 @@
 
 * [第1章 简介](ch1-intro/readme.md)
    * [1.1 Dart简史](ch1-intro/ch1.1-histroy.md)
-   * [1.2 安装开发环境(TODO)](ch1-intro/ch1.2-install.md)
+   * [1.2 安装开发环境](ch1-intro/ch1.2-install.md)
    * [1.3 第一个Dart程序(TODO)](ch1-intro/ch1.3-first-app.md)
    * [1.4 Dart的发展前景(TODO)](ch1-intro/ch1.4-future.md)
 * [第2章 控制流(TODO)](ch2-control-flow/readme.md)
