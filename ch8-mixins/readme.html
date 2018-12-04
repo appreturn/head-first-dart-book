@@ -1,0 +1,397 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第8章 mixins聚合(TODO) · Dart学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ch9-testing/readme.html" />
+    
+    
+    <link rel="prev" href="../ch7-generics/readme.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ch1-intro/readme.html">
+            
+                <a href="../ch1-intro/readme.html">
+            
+                    
+                    第1章 简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../ch1-intro/ch1.1-histroy.html">
+            
+                <a href="../ch1-intro/ch1.1-histroy.html">
+            
+                    
+                    1.1 Dart简史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../ch1-intro/ch1.2-install.html">
+            
+                <a href="../ch1-intro/ch1.2-install.html">
+            
+                    
+                    1.2 安装开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../ch1-intro/ch1.3-helloworld.html">
+            
+                <a href="../ch1-intro/ch1.3-helloworld.html">
+            
+                    
+                    1.3 第一个Dart程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../ch1-intro/ch1.4-future.html">
+            
+                <a href="../ch1-intro/ch1.4-future.html">
+            
+                    
+                    1.4 Dart的发展前景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ch2-control-flow/readme.html">
+            
+                <a href="../ch2-control-flow/readme.html">
+            
+                    
+                    第2章 控制流(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ch3-data-type/readme.html">
+            
+                <a href="../ch3-data-type/readme.html">
+            
+                    
+                    第3章 数据类型(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ch4-func-and-class/readme.html">
+            
+                <a href="../ch4-func-and-class/readme.html">
+            
+                    
+                    第4章 函数和类(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../ch5-package-and-pub/readme.html">
+            
+                <a href="../ch5-package-and-pub/readme.html">
+            
+                    
+                    第5章 包和仓库(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ch6-async-await-isolate/readme.html">
+            
+                <a href="../ch6-async-await-isolate/readme.html">
+            
+                    
+                    第6章 异步和多线程(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ch7-generics/readme.html">
+            
+                <a href="../ch7-generics/readme.html">
+            
+                    
+                    第7章 泛型(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    第8章 mixins聚合(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../ch9-testing/readme.html">
+            
+                <a href="../ch9-testing/readme.html">
+            
+                    
+                    第9章 单元测试(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../ch10-stdlib/readme.html">
+            
+                <a href="../ch10-stdlib/readme.html">
+            
+                    
+                    第10章 标准库(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../appendix/readme.html">
+            
+                <a href="../appendix/readme.html">
+            
+                    
+                    后记(TODO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第8章 mixins聚合(TODO)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;8&#x7AE0;-mixins&#x805A;&#x5408;">&#x7B2C;8&#x7AE0; mixins&#x805A;&#x5408;</h1>
+<p>TODO</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ch7-generics/readme.html" class="navigation navigation-prev " aria-label="Previous page: 第7章 泛型(TODO)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ch9-testing/readme.html" class="navigation navigation-next " aria-label="Next page: 第9章 单元测试(TODO)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第8章 mixins聚合(TODO)","level":"1.9","depth":1,"next":{"title":"第9章 单元测试(TODO)","level":"1.10","depth":1,"path":"ch9-testing/readme.md","ref":"ch9-testing/readme.md","articles":[]},"previous":{"title":"第7章 泛型(TODO)","level":"1.8","depth":1,"path":"ch7-generics/readme.md","ref":"ch7-generics/readme.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"preface.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Dart学习笔记","language":"zh-hans","gitbook":"3.x","description":"Dart学习笔记"},"file":{"path":"ch8-mixins/readme.md","mtime":"2018-11-22T04:00:46.035Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-04T17:50:25.845Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
