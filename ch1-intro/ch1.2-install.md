@@ -101,9 +101,27 @@ Dart的命令行工具最终被安装到了`/usr/lib/dart/bin`目录下, 用户�
 
 安装时可以选择安装稳定版本或者开发版本.
 
-### 1.2.4 查看版本
+### 1.2.4 pub镜像服务
 
-安装成功之后通过dart命令查看版本:
+pub是Dart工具箱中最重要的工具, 它负责Dart包的全部管理工作. Dart的第三方包一般都是由 https://pub.dartlang.org/ 包服务管理. 中国大陆的Flutter中文社区和上海交通大学都为Dart官方的包服务提供了镜像服务. 可以通过`PUB_HOSTED_URL`环境变量告知pub命令从哪个服务下载包资源.
+
+下面命令是设置从Flutter中文社区提供的镜像下载包:
+
+```
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+```
+
+或者是通过下面命令设置从上海交通大学的镜像服务下载包:
+
+```
+export PUB_HOSTED_URL=https://dart-pub.mirrors.sjtug.sjtu.edu.cn/
+```
+
+用户可以跟着自己的网络情况选择合适的镜像服务.
+
+### 1.2.5 查看版本
+
+Dart安装成功之后通过dart命令查看版本:
 
 ```
 $ dart --version
@@ -111,3 +129,9 @@ Dart VM version: 2.1.0 (Tue Nov 13 18:22:02 2018 +0100) on "macos_x64"
 ```
 
 上面的输出表示安装的是macOS系统的Dart 2.1稳定版本.
+
+或者通过pub命令查看版本:
+
+```
+$ pub version
+```
